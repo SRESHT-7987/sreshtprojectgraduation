@@ -4001,3 +4001,18 @@ input, select, textarea {
 		.textop {
 			float: right;
 		}
+
+
+/*neon*/
+
+.neon {
+color: #ffffff;
+text-shadow: 0 0 5px #fff, 0 0 10px #f4f, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+text-align: center;
+font-size: 10em;
+}
+
+
+.patterns {
+	position: relative;left: 50px
+}
