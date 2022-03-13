@@ -6,6 +6,26 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/*Scroll Bar*/
+
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(transparent,#FFA500);
+	border-radius: 6px;
+	transition: transform 500ms ease-in-out 25ms;
+}
+
+::-webkit-scrollbar-thumb-hover
+{
+	background: linear-gradient(transparent, #00FFFF);
+	transform: translateX(0) translateY(75px);
+	transform: scale(1.1);
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
