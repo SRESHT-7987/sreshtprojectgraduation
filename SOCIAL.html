@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>SRESHT Graduation</title>
@@ -99,10 +100,10 @@
 											<p>
 Let me tell you about some of the greatest space explorers of the world:<br>
 <b>1. Sally Ride <br>
-<b>2.Yuri Gagarin <br>
+<b>2. Yuri Gagarin <br>
 <b>3. Neil Armstrong <br>
 <b>4. Kirobo <br>
-<b>5.Nicolaus Copernicus<br>
+<b>5. Nicolaus Copernicus<br>
 <b>6. Carl Sagan <br>
 <b>7. Stephen Hawking<br>
 <b>8. Mae Jemison <br>
@@ -138,7 +139,7 @@ Let me tell you about some of the greatest space explorers of the world:<br>
 	8. <b>Tokyo City</b><br>
 	9. <b>Chicago City </b><br>
 	10. <b>Houston City</b><br>
-	11.<b>Johannesburg City </b>
+	11.<b> Johannesburg City </b>
 
 </p>
 
@@ -161,5 +162,36 @@ Let me tell you about some of the greatest space explorers of the world:<br>
 		<script src="  js/util.js"></script>
 		<script src="  js/main.js"></script>
 
-	</body>
+	<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
 </html>
